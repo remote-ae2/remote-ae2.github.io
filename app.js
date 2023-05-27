@@ -67,8 +67,8 @@ var Client = (function() {
 			closeSocket();
 		}
 	
-		socket = new WebSocket("ws://localhost:8080/ws");
-		//socket = new WebSocket("wss://remote-ae2.herokuapp.com/ws");
+		//socket = new WebSocket("ws://localhost:8080/ws");
+		socket = new WebSocket("wss://remote-ae2.onrender.com/ws");
 		
 		socket.onopen = function (event) {
 			console.log("connect");	
