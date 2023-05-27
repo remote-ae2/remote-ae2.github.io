@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<title>Remote-AE2</title>	
+    <link rel="stylesheet" type="text/css" href="css/style.css"></link>	
+</head>
+<body>
+	<div class="main">
+        <div class="container lobby" id="container-lobby">
+            <div class="center" id="container-input">
+                <div id="logo"></div>
+                <div class="menu">
+                    <div class="player-options">
+                        <input type="text" class="menu-option id-input" id="opencomputer-id-input" 
+                            tabindex="0" placeholder="Enter Opencomputer ID" maxlength="16"> 
+                                          
+                        <a class="btn btn-darken menu-option" id="btn-connect">Connect</a>                                          
+                    </div>   
+                </div>                       
+            </div>
+            <div class="center" id="container-wait">
+                <div id="wait-gif"></div>                    
+            </div>
+            <div class="container" id="container-ae2">
+                <div class="center" id="ae2">
+                    <div class="listbox-area" >
+                        <div id="table-header">
+                            <label class="noselect" id="label-terminal">Terminal</label>
+                            <input type="text" class="sort-input noselect" id="sort-input" spellcheck="false" tabindex="0" maxlength="16"> 
+                        </div>                           
+                        <div id="tableContainer" class="tableContainer noselect">
+                            <table id="table" border="0" cellpadding="0" cellspacing="0"></table>
+                        </div>
+                                 
+                    </div>
+                    <a class="btn btn-darken menu-ae noselect" id="btn-sort">Sort</a>
+                    <a class="btn btn-darken menu-ae noselect" id="btn-dir">Dir</a>
+                    <a class="btn btn-darken menu-ae noselect" id="btn-autocraft">T</a>
+                </div>                    
+            </div>
+            
+            <div id="ver-container">pre omega-0.0.1</div>  
+        </div>
+    </div>    
+    <script src="app.js"></script>   
+</body>
+</html>
